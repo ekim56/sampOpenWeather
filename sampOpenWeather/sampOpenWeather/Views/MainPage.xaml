@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:sampOpenWeather.ViewModels"
+             x:Class="sampOpenWeather.MainPage"
+             BackgroundImageSource="owbg1.jpg">
+    <ContentPage.BindingContext>
+        <viewmodels:MainPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Frame BackgroundColor="Transparent" OutlineColor="Gray" Opacity="0.7" Padding="0" Margin="20">
+            <Grid BackgroundColor="White" Opacity="0.3" Margin="10">
+                <Label
+                  Text="Manila"
+                  FontSize="Title"
+                  HorizontalTextAlignment="Center"
+                  TextColor="Black"
+                />
+             </Grid>
+        </Frame>
+       
+            <Label
+            x:Name="weather"  
+            FontSize="18"
+            HorizontalTextAlignment="Center"
+            TextColor="White"
+            />
+            <Label
+            x:Name="description"
+            TextColor="White"
+            HorizontalTextAlignment="Center"
+            FontSize="16"
+            />
+            <Label
+            x:Name="temp"
+            TextColor="White"
+            HorizontalTextAlignment="Center"
+            FontSize="Title" 
+            />
+            <Label
+            Text="Sunset"
+            FontSize="16"
+            TextColor="White"
+            Padding="10"
+            
+            />
+         
+            <Label
+            x:Name="Sunset"
+            FontSize="12"
+            TextColor="White"
+            Padding="10"
+            
+            />
+            <Label
+            Text="Sunrise"
+            FontSize="16"
+            TextColor="White"
+            Padding="10"
+           
+            />
+            <Label
+            x:Name="Sunrise"
+            TextColor="White"
+            FontSize="12"
+            Padding="10"
+            
+            />
+            <Label
+            Text="Windspeed"
+            FontSize="16"
+            TextColor="White"
+            Padding="10"
+            
+            />
+            <Label
+            x:Name="windspeed"
+            FontSize="12"
+            TextColor="White"
+            Padding="10"
+           
+            />
+            <Label
+            Text="Pressure"
+            FontSize="16"
+            TextColor="White"
+            Padding="10"
+           
+            />
+            <Label
+            x:Name="pressure"
+            TextColor="White"
+            FontSize="12"
+            Padding="10"
+          
+            />
+            
+    </StackLayout>
+
+</ContentPage>
